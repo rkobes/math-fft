@@ -1,0 +1,37 @@
+Revision history for Perl extension Math::FFT.
+
+1.28  Sat Sep 03 2005
+     - bump version so PAUSE ignores deleted 1.27 package
+
+0.28  Sun Aug 28 2005
+     - fix version mistake in META.yml
+
+0.27  Sun Aug 28 2005
+     - add method to calculate root mean square of data (suggested
+       by Robert Hiller)
+     - in calculating the power spectrum, use same logic for
+       segments = 1 as is currently done for segments > 1 when
+       "number" is specified (suggested by Robert Hiller)
+     - in calculating the power spectrum, check if data size
+       is an integral power of 2 if segments is not specified
+       or if segments = 1 and "number" is not specified
+     - in the spectrum method, change the name of the "hamm" window
+       function to "hann" (suggested by Robert Hiller). For
+       backwards compatibility, "hamm" is still supported.
+     - in the pod for the spctrm method, clarify how options
+       are to be passed in (suggested by Robert Hiller)
+
+0.26  Sat Dec 04 2004
+     - include "arrays.h" in FFT.xs (required for some platforms)
+       (thanks to Doug Shubert)
+
+0.25  Thu Dec 28 2000
+     - implement the routines of arrays.c of PGPLOT to pass
+       arrays to and from C
+     - added methods to calculate correlation, convolution
+       and deconvolution, and power spectrum
+     - added some simple statistical methods
+
+0.15  Tue Dec  5 2000
+      - original version; created by h2xs 1.20 with options
+                -n Math::FFT

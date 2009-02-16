@@ -1,0 +1,15 @@
+# http://module-build.sourceforge.net/META-spec.html
+#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
+name:         Math-FFT
+version:      1.28
+installdirs:  site
+license:      perl
+abstract:     Perl extension for Fast Fourier Transforms
+authored_by:
+    - Randy Kobes <r.kobes@uwinnipeg.ca>
+distribution_type: module
+provides:
+    Math::FFT:
+        file: FFT.pm
+        version: 1.28
+generated_by: ExtUtils::MakeMaker version 6.17
